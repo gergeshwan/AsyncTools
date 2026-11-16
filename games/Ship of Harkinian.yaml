@@ -1,0 +1,446 @@
+﻿Ship of Harkinian:
+
+  exclude_locations:
+    - GF HBA 1000 Points
+    - GF HBA 1500 Points
+  local_items:
+    - Triforce Piece
+    - Ice Trap
+    - Song of Time
+
+  skulls_sun_song: true
+
+  closed_forest:
+    deku_only: 4
+    'off': 1
+  kakariko_gate:
+    closed: 4
+    open: 1
+  door_of_time:
+    song_only: 4
+    open: 1
+  zoras_fountain: closed
+  fortress_carpenters: fast
+
+  ganons_trials: skip
+  ganons_trials_count: 0
+  medallion_locked_trials: false
+
+  # Ship AP doesn't have MQ support, skipping MQ setup
+
+  rainbow_bridge:
+    always_open: 1
+    medallions: 7
+    dungeons: 2
+  rainbow_bridge_medallions_required: random
+  rainbow_bridge_dungeons_required: random
+  rainbow_bridge_greg_modifier: off
+
+  starting_age:
+    child: 1
+    adult: 1
+
+  triforce_hunt:
+    'false': 4
+    'true': 1
+  triforce_hunt_pieces_total:
+    45: 5
+    60: 3
+    75: 2
+  triforce_hunt_pieces_required_percentage: 67
+
+  # Ship AP doesn't have random start location, dungeon ER, or boss shuffle
+
+  shuffle_songs: anywhere
+
+  shuffle_shops:
+    'false': 3
+    'true': 2
+  shuffle_shops_item_amount: random-range-0-4
+  shuffle_shops_minimum_price: 10
+  shuffle_shops_maximum_price: 10
+  shop_affordable_prices: false
+
+  shuffle_skull_tokens:
+    'off': 3
+    dungeon: 2
+    all: 1
+
+  shuffle_scrubs:
+    'off': 4
+    all: 1
+  shuffle_scrubs_minimum_price: 10
+  shuffle_scrubs_maximum_price: 10
+  scrub_affordable_prices: false
+
+  shuffle_kokiri_sword:
+    'false': 1
+    'true': 4
+
+  shuffle_ocarinas:
+    'false': 1
+    'true': 1
+
+  # Default value, will be overwritten by pots_crates_freestanding_trigger if it rolls differently
+  shuffle_pots: off
+  shuffle_crates: off
+  shuffle_freestanding_items: off
+
+  # Trigger to mostly roll pots, crates, and freestanding items together
+  pots_crates_freestanding_trigger:
+    off: 7
+    dungeon: 2
+    all: 1
+
+  maps_and_compasses: start_with
+  small_key_shuffle: anywhere
+  gerudo_fortress_key_shuffle: anywhere
+  boss_key_shuffle:
+    own_dungeon: 4
+    anywhere: 1
+
+  key_rings:
+    'off': 3
+    count: 7
+  key_rings_count: 9
+
+  # Core OOT uses an option to remove the Ganon boss key, mapped to vanilla for Ship
+  ganons_castle_boss_key:
+    vanilla: 1
+    lacs_medallions: 12
+    lacs_dungeon_rewards: 7
+  ganons_castle_boss_key_medallions_required: random-range-4-6
+  ganons_castle_boss_key_dungeon_rewards_required: random-range-6-9
+  ganons_castle_boss_key_greg_modifier: off
+
+  # Number of cuccos is set client side and not in the YAML, skipping
+  # Chest and pot appearances are set client side and not in the YAML, skipping
+
+  # TODO Check what core OOT hint_dist async would include, the below is all just guesswork
+  hint_clarity: clear
+  gossip_stone_hints: need_nothing
+  tot_altar_hint: true
+  ganondorf_hint: true
+  sheik_la_hint: false
+  boss_key_hint: false
+  dampe_diary_hint: true
+  greg_hint: false
+  saria_hint: false
+  mido_hint: false
+  frog_game_hint: true
+  ocarina_of_time_hint: false
+  big_goron_hint: true
+  big_poe_hint: true
+  chicken_hint: false
+  malon_hint: true
+  horseback_archery_hint: true
+  fishing_pole_hint: false
+  scrub_hints: true
+  merchant_hints: true
+  gs_10_hint: true
+  gs_20_hint: true
+  gs_30_hint: true
+  gs_40_hint: true
+  gs_50_hint: true
+  gs_100_hint: false
+  mask_shop_hint: false
+
+  skip_scarecrows_song: true
+
+  # Bunny hood speed is set client side and not in the YAML, skipping
+
+  blue_fire_arrows: true
+  start_with_stick_ammo: true
+  start_with_nut_ammo: true
+  full_wallets: true
+
+  # Ship doesn't have MQ support, skipping enhance_map_compass from core OOT
+
+  # Base values, can be overwritten by tricks_trigger if it rolls differently
+  enable_all_tricks: false
+  tricks_in_logic: []
+
+  tricks_trigger:
+    none: 9
+    simple: 5
+    advanced: 1
+
+  # Base values, can be overwritten by tedium_trigger if it rolls differently
+  shuffle_weird_egg: false
+  skip_child_zelda: true
+  complete_mask_quest: true
+  shuffle_adult_trade_items: false
+  # Child stealth section is set client side and not in the YAML, skipping
+
+  tedium_trigger:
+    true: 1
+    false: 3
+
+  # Settings that are only in Ship or were not set in the Big Asnyc's core OOT YAML
+
+  ###############
+  # Area Access #
+  ###############
+
+  sleeping_waterfall: closed
+  jabu_jabu: closed
+  lock_overworld_doors: false
+
+  ##################
+  # World Settings #
+  ##################
+
+  starting_hearts: 3
+
+  #################
+  # Shuffle Items #
+  #################
+
+  shuffle_master_sword: false
+  shuffle_childs_wallet: false
+  shuffle_tycoon_wallet: false
+  shuffle_ocarina_buttons: false
+  shuffle_swim: false
+  shuffle_gerudo_membership_card: true
+  shuffle_fishing_pole: false
+  shuffle_deku_stick_bag: false
+  shuffle_deku_nut_bag: false
+  rocs_feather: false
+
+  ############################
+  # Shuffle NPCs & Merchants #
+  ############################
+
+  shuffle_fish: off
+  shuffle_beehives: false
+  shuffle_cows: false
+  shuffle_trees: false
+  shuffle_merchants: off
+  shuffle_merchants_minimum_price: 0
+  shuffle_merchants_maximum_price: 0
+  merchant_affordable_prices: false
+  shuffle_frog_song_rupees: false
+  shuffle_100_gs_reward: false
+  shuffle_boss_souls: off
+  shuffle_fountain_fairies: false
+  shuffle_stone_fairies: false
+  shuffle_bean_fairies: false
+  shuffle_song_fairies: false
+  shuffle_grass: off
+
+  #########################
+  # Shuffle Dungeon Items #
+  #########################
+
+  shuffle_dungeon_rewards: end_of_dungeons
+
+  ##############
+  # Timesavers #
+  ##############
+
+  big_poe_target_count: 1
+  skip_epona_race: true
+
+  #####################
+  # Item Pool & Traps #
+  #####################
+
+  item_pool: balanced
+  ice_trap_count: 6
+  ice_trap_filler_replacement: 0
+
+  #########
+  # Hints #
+  #########
+
+  ##################
+  # Starting Items #
+  ##################
+
+  start_with_links_pocket: dungeon_reward
+  start_with_kokiri_sword: false
+  start_with_master_sword: false
+  start_with_deku_shield: false
+  start_with_ocarina: off
+  start_with_magic_beans: false
+  start_with_zeldas_lullaby: false
+  start_with_eponas_song: false
+  start_with_sarias_song: false
+  start_with_suns_song: false
+  start_with_song_of_time: false
+  start_with_song_of_storms: false
+  start_with_minuet: false
+  start_with_bolero: false
+  start_with_serenade: false
+  start_with_requiem: false
+  start_with_nocturne: false
+  start_with_prelude: false
+
+  #######################
+  # Additional Features #
+  #######################
+
+  bombchu_bag: none
+  bombchu_drops: true
+  sunlight_arrows: false
+  infinite_upgrades: off
+  skeleton_key: false
+  slingbow_break_beehives: false
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+
+  triggers:
+    # Exclude skulltula rewards without tokensanity
+    - option_category: Ship of Harkinian
+      option_name: shuffle_skull_tokens
+      option_result: 'off'
+      options:
+        Ship of Harkinian:
+          +exclude_locations:
+            - Kak 10 Gold Skulltula Reward
+            - Kak 20 Gold Skulltula Reward
+            - Kak 30 Gold Skulltula Reward
+            - Kak 40 Gold Skulltula Reward
+            - Kak 50 Gold Skulltula Reward
+
+    # Tedium -- allows for some of the frequently complained about options to be rolled rarely
+    - option_category: Ship of Harkinian
+      option_name: tedium_trigger
+      option_result: true
+      options:
+        Ship of Harkinian:
+          # These aren't completely identical weights because core OOT has one setting for the child trade quest and they're separate here.
+          # Nesting more triggers for an exact match sounds overcomplicated for a demo, just going to leave it like this
+          shuffle_weird_egg:
+            true: 1
+            false: 1
+          skip_child_zelda:
+            true: 1
+            false: 2
+          complete_mask_quest:
+            true: 1
+            false: 1
+          shuffle_adult_trade_items: true
+          # Child stealth section is set client side and not in the YAML, skipping
+
+    # Groups various shuffles together
+    - option_category: Ship of Harkinian
+      option_name: pots_crates_freestanding_trigger
+      option_result: dungeons
+      options:
+        Ship of Harkinian:
+          shuffle_pots:
+            dungeons: 9
+            off: 1
+          shuffle_crates:
+            dungeons: 9
+            off: 1
+          shuffle_freestanding_items:
+            dungeons: 9
+            off: 1
+
+    - option_category: Ship of Harkinian
+      option_name: pots_crates_freestanding_trigger
+      option_result: all
+      options:
+        Ship of Harkinian:
+          shuffle_pots:
+            all: 9
+            off: 1
+          shuffle_crates:
+            all: 9
+            off: 1
+          shuffle_freestanding_items:
+            all: 9
+            off: 1
+
+    - option_category: Ship of Harkinian
+      option_name: tricks_trigger
+      option_result: simple
+      options:
+        Ship of Harkinian:
+          tricks_in_logic:
+            - Visible Collision
+            - Grottos Without Agony
+            - Fewer Tunic Requirements
+            - Kak Man On Roof
+            - Kak Adult Windmill PoH
+            # TODO - zora's river rupees with jump dive
+            - LH Lab Diving
+            - GF Jump
+            - BotW Child Deadhand
+            - Fire Boss Door Jump
+            - Lens Spirit
+            - Lens Ganon
+
+    - option_category: Ship of Harkinian
+      option_name: tricks_trigger
+      option_result: advanced
+      options:
+        Ship of Harkinian:
+          tricks_in_logic:
+            - Visible Collision
+            - Grottos Without Agony
+            - Fewer Tunic Requirements
+            - Rusted Switches
+            - KF Adult GS
+            - LW GS Bean
+            - Kak Man On Roof
+            - Kak Adult Windmill PoH
+            - Kak Rooftop GS
+            - GY Child Dampe Race PoH
+            - DMT Upper GS
+            - GC Leftmost
+            - DMC Hover Bean PoH
+            - DMC Boulder JS
+            - ZR Cucco
+            - ZR Hover
+            # TODO - zora's river rupees with jump dive
+            - LH Lab Wall GS
+            - LH Lab Diving
+            - GF Jump
+            - HW Crossing
+            # TODO - deku tree basement vines gs with jump slash
+            - Deku B1 Bow Webs
+            - DC Vines GS
+            - DC Stairs With Bow
+            - DC Scrub Room
+            - DC Jump # TODO dodongo's cavern spike trap room jump without hover boots
+            - Jabu Near Boss Ranged
+            - Lens BotW
+            - BotW Child Deadhand
+            - BotW Basement
+            - Forest Vines
+            - Forest Doorframe
+            - Fire Boss Door Jump
+            - Fire SoT
+            - Fire Strength
+            - Fire Flame Maze
+            - Water Longshot Torch
+            - Water Cracked Wall Hovers
+            - Water BK Region
+            - Water BK Jump Dive
+            - Water FW Central GS
+            - Water Irons Central GS
+            - Water Hookshot Falling Platform GS
+            - Lens Shadow
+            - Lens Bongo
+            - Lens Spirit
+            - Spirit Child Chu
+            - Spirit Lobby GS
+            - Spirit Lobby Jump
+            - Spirit Wall
+            - Lens GTG
+            - GTG Without Hookshot
+            - GTG Fake Wall
+            - Lens Ganon
+
+    # Per game name
+    - option_category: null
+      option_name: name
+      option_result: Player{player}
+      options:
+        null:
+          name: SOH-{player}
